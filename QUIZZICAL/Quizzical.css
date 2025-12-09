@@ -1,0 +1,757 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.center_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 180px;
+    padding-bottom: 2%;
+}
+@media(max-width:700px){
+    .center_div{padding-top: 50px;}
+}
+span{
+    color: blue;
+    font-weight: bold;
+}
+
+ .help_div_1{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation-name: beeper;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+ }
+ #display_text{
+    display: none;
+    background-color: indianred;
+    color: white;
+
+    width: 300px;
+    padding: 10px;
+ }
+ .producer{
+padding-left: 50%;
+color: blue;
+cursor: pointer;
+ }
+ .speech{
+      text-align: justify;
+ }
+ .tip{
+color: rgb(0, 255, 55);
+ }
+ @keyframes beeper{
+    0%{
+     background-color: red;
+     opacity: 1;
+     transition: 1s;
+     color:green;
+    }
+    50%{
+       background-color: yellow;
+       color: blue;
+     opacity: 0.70;
+     transition: 1s; 
+    }
+    100%{
+        background-color: brown;
+     opacity: 0.15s;
+     transition: 1s;
+    }
+ }
+ .help_div_2{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    border: none;
+ }
+ #name_input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid indigo;
+    margin-left:30px ;
+    margin-bottom: 10px;
+ }
+#name_input::placeholder{
+    color: rgb(48, 7, 61);
+}
+
+
+ .title_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+details{
+    border: 2px solid blue;
+   width: 300px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   border-radius: 20px;
+   padding-left: 5px;
+   font-weight: bold;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   color: indigo;
+   margin-top: 40px;
+}
+.circle{
+    height: 8px;
+    width: 8px;
+    border-radius: 20px;
+    border: 2px solid blue;
+    display: inline;
+    vertical-align:bottom;
+    margin-top: 6px;
+    margin-right: 7px;
+}
+.flex{
+    display: flex;
+   
+}
+.animals{
+    vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+.bible{
+    vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+.places{
+    vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+#myNameDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #myName{
+        border: 2px solid rgb(76, 0, 255);
+        border-radius: .4rem;
+        margin-bottom: 5px;
+        height: 30px;
+    }
+
+    #btnConfirm{
+      border: 2px solid rgb(76, 0, 255);
+      width:100px ;
+      margin-left:2.5rem;
+
+      &:hover{
+        transform: scale(1.25);
+        margin-top: 7px;
+        border: 2px solid lightblue;
+        color: rgb(76, 0, 255);
+        background-color: rgba(255, 255, 255, 0.15);
+        box-shadow:4px 3px 20px blue ;
+        
+      }
+    }
+}
+.Easy{
+ vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+.Normal{
+     vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+.Hard{
+     vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+.seven{
+     vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+.five{
+     vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+.ten{
+     vertical-align: top;
+    margin-top: 0px;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: purple;
+}
+summary{
+    font-size: 30px;
+    color: blue;
+} 
+
+#section1{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:500px){
+    #section1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 21px;
+    }
+    .start_div{
+        padding-left:43px ;
+    }
+}
+
+
+#start_btn{
+ 
+    padding-left: 80px;
+    font-weight: bold;
+     background: rgb(53, 2, 90); 
+    border-radius: 15px;
+    border: 1px solid black;
+    color: black;
+    display: none;
+}
+.start_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+
+/* .Bible_Section{
+    display: none;
+}
+.palces_section{
+    display: none;
+}
+.plants_section{
+    display: none;
+} */
+.child_animalss_section{
+    display: none;
+}
+.child_places_section{
+    display: none;
+}
+.child_Bible_section{
+    display: none;
+}
+.main{
+    display: none;
+}
+
+
+/* beginning of Bible text */
+#question-1-text-1,#question-1-text-2,#question-1-text-3,#question-1-text-4,#question-1-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+#question-2-text-1,#question-2-text-2,#question-2-text-3,#question-2-text-4,#question-2-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#question-3-text-1,#question-3-text-2,#question-3-text-3,#question-3-text-4,#question-3-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#question-4-text-1,#question-4-text-2,#question-4-text-3,#question-4-text-4,#question-4-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#question-5-text-1,#question-5-text-2,#question-5-text-3,#question-5-text-4,#question-5-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#question-6-text-1,#question-6-text-2,#question-6-text-3,#question-6-text-4,#question-6-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+
+
+#question-7-text-1,#question-7-text-2,#question-7-text-3,#question-7-text-4,#question-7-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+
+
+#question-8-text-1,#question-8-text-2,#question-8-text-3,#question-8-text-4,#question-8-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+
+#question-9-text-1,#question-9-text-2,#question-9-text-3,#question-9-text-4,#question-9-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#question-10-text-1,#question-10-text-2,#question-10-text-3,#question-10-text-4,#question-10-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+/* end of bible text */
+
+
+
+/* beginning of animals text */
+#animals-question-1-text-1,#animals-question-1-text-2,#animals-question-1-text-3,#animals-question-1-text-4,#animals-question-1-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#animals-question-2-text-1,#animals-question-2-text-2,#animals-question-2-text-3,#animals-question-2-text-4,#animals-question-2-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#animals-question-3-text-1,#animals-question-3-text-2,#animals-question-3-text-3,#animals-question-3-text-4,#animals-question-3-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+#animals-question-4-text-1,#animals-question-4-text-2,#animals-question-4-text-3,#animals-question-4-text-4,#animals-question-4-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#animals-question-5-text-1,#animals-question-5-text-2,#animals-question-5-text-3,#animals-question-5-text-4,#animals-question-5-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#animals-question-6-text-1,#animals-question-6-text-2,#animals-question-6-text-3,#animals-question-6-text-4,#animals-question-6-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#animals-question-7-text-1,#animals-question-7-text-2,#animals-question-7-text-3,#animals-question-7-text-4,#animals-question-7-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#animals-question-8-text-1,#animals-question-8-text-2,#animals-question-8-text-3,#animals-question-8-text-4,#animals-question-8-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+
+#animals-question-9-text-1,#animals-question-9-text-2,#animals-question-9-text-3,#animals-question-9-text-4,#animals-question-9-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#animals-question-10-text-1,#animals-question-10-text-2,#animals-question-10-text-3,#animals-question-10-text-4,#animals-question-10-text-5{
+    display: none;
+     border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+/*end of animal text*/
+
+
+/*Beginning of places text*/
+#places-question-1-text-1,#places-question-1-text-2,#places-question-1-text-3,#places-question-1-text-4,#places-question-1-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+     
+}
+
+
+#places-question-2-text-1,#places-question-2-text-2,#places-question-2-text-3,#places-question-2-text-4,#places-question-2-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#places-question-3-text-1,#places-question-3-text-2,#places-question-3-text-3,#places-question-3-text-4,#places-question-3-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+#places-question-4-text-1,#places-question-4-text-2,#places-question-4-text-3,#places-question-4-text-4,#places-question-4-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#places-question-5-text-1,#places-question-5-text-2,#places-question-5-text-3,#places-question-5-text-4,#places-question-5-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+          color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#places-question-6-text-1,#places-question-6-text-2,#places-question-6-text-3,#places-question-6-text-4,#places-question-6-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#places-question-7-text-1,#places-question-7-text-2,#places-question-7-text-3,#places-question-7-text-4,#places-question-7-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#places-question-8-text-1,#places-question-8-text-2,#places-question-8-text-3,#places-question-8-text-4,#places-question-8-text-5{
+    display: none;
+    border-top: 1px solid rgb(64, 64, 150);
+    color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+
+#places-question-9-text-1,#places-question-9-text-2,#places-question-9-text-3,#places-question-9-text-4,#places-question-9-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+#places-question-10-text-1,#places-question-10-text-2,#places-question-10-text-3,#places-question-10-text-4,#places-question-10-text-5{
+    display: none;
+        border-top: 1px solid rgb(64, 64, 150);
+        color: rgb(87, 12, 27);
+          font-size: 17px;
+          font-weight: 500;
+}
+
+
+/*questions style */
+
+
+button{
+   width: 205px;
+    background-color: none;
+    border: 2px solid aqua;
+    border-radius:20px;
+    margin-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+select{
+    width: 900px;
+    height: 700px;
+    background: none;
+}
+.opt1{
+    padding: 20px 90px;
+   
+}
+.qustion_1,.qustion_2,.qustion_3,.qustion_4,
+.qustion_5,.qustion_6,.qustion_7,.qustion_8,.qustion_9,.qustion_10{
+    margin-bottom:40px;
+    margin-left: 30px;
+     color: rgb(158, 45, 4);
+     font-size: 19px;
+     font-weight: bold;
+}
+
+.qustion_10_places{
+     margin-bottom:40px;
+    border-top: 1px solid peru;
+    margin-left: 30px;
+     color: red;
+     font-size: 18px;
+}
+
+.showme{
+    color: rgb(207, 8, 207);
+}
+
+.center_check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+#Check_result_bible{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: indigo;
+    
+}
+
+
+#Check_result_animals{
+     font-size: 20px;
+    font-weight: bold;
+    background-color: indigo;
+}
+#Check_result_places{
+      font-size: 20px;
+    font-weight: bold;
+    background-color: indigo;
+}
+
+#playAgain_places{
+    display: none;
+     font-size: 20px;
+    font-weight: bold;
+    background-color: indigo;
+    padding-left: 65px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+#playAgain_animals{
+    display: none;
+     font-size: 20px;
+    font-weight: bold;
+    background-color: indigo;
+    padding-left: 65px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+#playAgain_Bible{
+    display: none;
+     font-size: 20px;
+    font-weight: bold;
+    background-color: indigo;
+    padding-left: 65px;
+    color: white;
+    font-weight: bold;
+}
+
+.milli{
+    color: rgb(184, 5, 5);
+}
+
+#lost_question{
+    display: none;
+    color: red;
+    font-weight: bold;
+    background:rgb(48, 36, 36);
+    width: 210px;
+    padding-left: 50px;
+    position: relative;
+    animation-name: changer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changer {
+    0%{
+        background:rgb(105, 161, 207);
+        transition: 2s;
+    }
+    50%{
+        background:rgb(8, 117, 160);
+         transition: 2s;
+    }
+    100%{
+        background: blue;
+        border: 1px dotted blue;
+         transition: 2s;
+    }
+}
+
+#inspiration{
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(100, 218, 32);
+    background:white;
+    padding-left: 80px;
+}
+
+.next-question-btn{
+    display: none;
+       background: green;
+    column-rule-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    width: 60px;
+    display: none;
+    &:hover{
+        border-radius: 4px;
+        background: rgb(149, 226, 34);
+          border-radius: 7px;
+    }
+}
+
+.next-question-btn-places{
+    display: none;
+    background: green;
+    column-rule-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    width: 60px;
+    display: none;
+    &:hover{
+        border-radius: 4px;
+        background: rgb(149, 226, 34);
+          border-radius: 7px;
+    }
+}
